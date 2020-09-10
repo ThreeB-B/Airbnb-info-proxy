@@ -37,6 +37,6 @@ let roomId = 0;
       .then(({ data }) => {res.send(data)});
   });
 
-app.listen(3010, function() {
-    console.log('listening on port 3010!');
+app.listen(80, function() {
+    console.log('listening on port 80!');
 });
