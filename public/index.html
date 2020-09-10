@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Airbnb-proxy</title>
     <link rel="stylesheet" type="text/css" href="styles.css" >
     <link rel="shortcut icon" type="image/png" href="https://a0.muscache.com/airbnb/static/icons/android-icon-192x192-c0465f9f0380893768972a31a614b670.png"/>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <div>
-            <div class="photo" id="photos"></div>
-            <div class="booking1">
-                 <div class="booking" id="booking"></div>
-            </div>
-            <div class="info" id="airbnb-info"></div>
-            <div class="reviews" id="airbnb_reviews"></div>
-            <div class="sidebar"></div>
-        </div>
-            <div class="homes" id="moreHomes"></div>
+        <img src="https://sdcairbnbhostphotos231.s3-us-west-1.amazonaws.com/fakeHouse/Screen+Shot+2020-09-09+at+5.02.33+PM.png" width="1500" height="625" />
     </div>
-    <script src="http://localhost:3001/bundle.js"></script>
-    <script src="http://localhost:3002/bundle.js"></script>
-    <script src="http://localhost:3003/bundle.js"></script>
-    <script src="http://localhost:3004/bundle.js"></script>
-    <script src="http://localhost:3005/bundle.js"></script>
-
-</body>
+    <div id="booking"></div>
+    <div id="airbnb-info"></div>
+    <div id="airbnb_reviews"></div>
+    <script type="text/javascript" src="http://airbb3-info1-1972256759.us-west-1.elb.amazonaws.com/bundle.js"></script>
+    <script type="text/javascript" src="http://sdcloadbalancer-1748024864.us-west-1.elb.amazonaws.com/bundle.js"></script>
+    <script type="text/javascript" src="/rooms/:id/bundle.js"></script>
+  </body>
 </html>
